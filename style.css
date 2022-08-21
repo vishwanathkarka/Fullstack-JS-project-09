@@ -1,0 +1,358 @@
+/* POPPINS FONT FAMILY */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin:0;
+  padding:0;
+}
+body{
+  background: #f8f8fa;
+}
+/* -----------------------    header   --------------------------------- */
+
+header{
+  background: #4617fe;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;;
+
+}
+nav{
+  margin-left:auto;
+  padding-right: 40px;
+}
+
+header nav .nav-item {
+color:white;
+margin-top:20px;
+margin-right: 30px;
+font-weight:100
+
+}
+header nav .nav-item-active{
+  color:#4617fe;
+  background: white;
+  padding:4px 7px 4px 7px;
+  border-radius: 8px;
+
+}
+header .header-text h2{
+  margin:30px;
+  color: white;
+font-size: 2.4rem;
+}
+header .header-text p{
+  margin:30px;
+  color: white;
+font-size: 1.5rem;
+}
+header .header-image{
+  position: absolute;
+  right:0;
+  top:130px;
+
+}
+header .nav-item:last-child{
+  margin-left: 20px;
+}
+
+@media screen and (max-width:1190px) {
+  header .header-image{
+  width: 500px;
+
+  height: 450px;
+  }
+  header .header-text{
+    width:600px;
+  }
+  .companies a{
+    margin:20px;
+  }
+  
+}
+@media screen and (max-width:1050px){
+  header .header-image{
+    width:400px;
+  }
+
+}
+@media screen and (max-width:960px){
+  header .header-image{
+    width:300px;
+  }
+}
+@media screen and (max-width:850px){
+  header .header-image{
+  display: none;
+  }
+}
+/*--------------- Companies List   --------------- */
+.companies a {
+  font-family: "Righteous";
+  font-size: 1.5rem;
+  color:black;
+  text-decoration: none;
+  margin:50px
+
+}
+.companies {
+margin:30px 10px 10px 40px;
+
+}
+
+/* ------------       API     ---------------- */
+.api {
+  margin:40px 10px 40px 10px;
+}
+
+.api .api-heading {
+  font-size: 2.5rem;
+  margin-left:30px;
+}
+.api .cards {
+  display: flex;
+  gap:40px;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-wrap: wrap;
+  
+}
+.cards .card-active {
+  padding:40px 15px;
+  background: white;
+  margin:20px;
+  border-radius: 8px;
+}
+.blog-bottom .blog-card-bottom-image{
+  position: absolute;
+  border: 5px solid white;
+  border-radius: 50%;
+
+}
+.cards .card-active .card-head-active {
+  color:#4617fe;
+}
+.cards .card-body {
+font-size: 1rem;
+
+}
+
+.cards .card:last-child::after {
+  content:'>';
+  text-align: center;
+  align-items: center;
+  position: absolute;
+  font-size: 2rem;
+  background:#4617fe ;
+  color: white;
+  padding:10px;
+  
+  top:90px;
+  right:30px;
+  border-radius: 50%;
+
+}
+/* ----------------------    blog      ------------------------- */
+.blog-heading{
+  font-size: 1.5rem;
+  margin-left:40px
+
+}
+.blog-cards {
+  display: flex;
+}
+.blog-cards .blog-card{
+  display: flex;
+  align-items: center;
+
+  width:50%;
+}
+.blog-cards .blog-card{
+  position:relative;
+  margin:50px;
+  background: white;
+  border-top-left-radius: 30%;
+}
+.blog-cards .blog-card .blog-content{
+  margin:10px
+} 
+.blog-cards .blog-card .blog-bottom{
+ position: absolute;
+ bottom: 40px;
+ right: 300px;
+}
+
+.blog-card div.blog-author{
+  position: absolute;
+    bottom: 0px;
+    right: 90px;
+}
+@media screen and (max-width:1150px) {
+ .blog-cards{
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+ }
+ .blog-content{
+margin:auto;
+ }
+ .blog-cards .blog-card {
+  width: 60%;
+ }
+ .blog-cards .blog-card .blog-content{
+  margin: auto;
+ }
+ .faq-section .faq-image{
+  width: 100px;
+
+ }
+ .faq-section .faq-image {
+ width: 500px;
+ height: 350px;
+ }
+}
+@media screen and (max-width:150px) {
+  .blog-cards .blog-card {
+    width: 80%;
+   }
+}
+@media screen and (max-width:950px) {
+  .blog-cards .blog-card{
+    width: 80%;
+  }
+}
+@media screen and (max-width:700px) {
+  .blog-cards .blog-card{
+    width: 100%;
+    margin: 20px;
+  }
+}
+/* ------------------       FAQ     ------------*/
+.faq-section{
+  background: #e9edff;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.faq-section .faq-content {
+  font-size: 1rem;
+  margin: 10px;
+
+}
+.faq-image img{
+  display: block;
+}
+
+/* ------------------       blog     ----------------------- */
+
+.faq-section .faq-content h4:nth-child(3){
+  margin-top: 10px;
+  font-size: 1.5rem;
+}
+.faq-section .faq-content button{
+  background: #4617fe;
+  color: white;
+  padding:10px;
+  border: none;
+  border-radius: 8px;
+  margin:10px
+}
+.faq-section .faq-content > h2 {
+  font-size: 3rem;
+  font-weight:bolder;
+}
+.download-section{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px;
+  position:relative;
+  flex-wrap: wrap;
+}
+
+.download-section .download-content {
+  font-size: 1.2rem;
+  font-family: "Righteous";
+  font-weight: 900;
+
+}
+
+
+.download-section .download-email form input{
+background-color: #e9edff;
+  border: none;
+  color:rgb(81, 80, 80);
+  padding: 15px 300px 15px 50px;
+  border-radius: 30px;
+  outline: none;
+  
+}
+
+.download-email button {
+  position: absolute;
+  right:8px;
+  top:10px;
+  padding:8px 20px;
+  border-radius: 20px;
+  background: #4617fe;
+  color: white;
+  border:none;
+}
+
+@media screen and (max-width:874px) {
+  .download-email button{
+    top:65px;
+    right:90px;
+
+  }
+.download-section .download-email form input{
+  width:70%;
+}
+}
+
+/* ---------------     footer     ------------------ */
+
+.footer-section{
+  background:#4617fe ;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-section .footer-left .list {
+list-style: none;
+color:white;
+display: flex;
+gap:20px;
+margin:20px  0 40px 0;
+font-weight: 200;
+
+}
+.footer-left .footer-logo {
+  width:100px;
+}
+.footer-section .footer-right .logos-list {
+list-style: none;
+color:white;
+display: flex;
+gap:50px;
+
+}
+
+.footer-section .footer-right .logos-list .list-items{
+padding:20px
+}
+.footer-section .footer-left .list .list-items:nth-child(2)::after{
+  content: " ";
+  height:50%;
+  width:10px;
+  color: white;
+  background: white;
+}
+.footer-section .footer-right .footer-logos{
+margin:0 40px;
+}
+
