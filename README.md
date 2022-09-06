@@ -9,12 +9,12 @@
 ## PROJECT 09 - [LINK ](https://liveproj-09.netlify.app/)
 
 -   Skills Gained in this project
-    -   Learned how we can center any svgs, images as background by using background-position & background-repeat.
-    -  Learned to create linear-gradient background color
+    -   learned how to add responsiveness.
+    -  learned where to use the CSS order property
 
 ## Time taken to finish this project
 
--   2 hour taken to complete it.
+-   4 hour taken to complete it.
 
 
 
